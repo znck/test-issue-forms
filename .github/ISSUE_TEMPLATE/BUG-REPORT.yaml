@@ -17,8 +17,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Version
-      description: What is the version of SDK?
+      label: What is the version of SDK?
     validations:
       required: false
   - type: dropdown
@@ -45,7 +44,7 @@ body:
       label: Steps to reproduce
       description: Please include a minimal repro, https://stackoverflow.com/help/minimal-reproducible-example
       value: |
-        Minimal Repro: 
+        Minimal Repro: <!-- PUT REPRO URL HERE -->
         
         1. Open ...
         2. Click ...
