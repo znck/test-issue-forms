@@ -41,17 +41,17 @@ body:
         - label: Windows
         - label: Linux
   - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      placeholder: Tell us what you see!
-    validations:
-      required: true
-  - type: textarea
-    id: expect
+    id: steps
     attributes:
       label: Steps to reproduce
       description: Please include a repro, https://stackoverflow.com/help/minimal-reproducible-example
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      placeholder: Tell us what you see!
     validations:
       required: true
   - type: textarea
