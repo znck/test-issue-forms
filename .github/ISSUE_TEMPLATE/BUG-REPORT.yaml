@@ -43,7 +43,13 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Please include a repro, https://stackoverflow.com/help/minimal-reproducible-example
+      description: Please include a minimal repro, https://stackoverflow.com/help/minimal-reproducible-example
+      value: |
+        Minimal Repro: 
+        
+        1. Open ...
+        2. Click ...
+        3. Type ...
     validations:
       required: true
   - type: textarea
@@ -57,6 +63,7 @@ body:
     id: expect
     attributes:
       label: What did you expect to happen?
+      placeholder: Tell us what you want!
     validations:
       required: true
   - type: input
