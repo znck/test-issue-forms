@@ -31,15 +31,14 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
-  - type: checkboxes
+  - type: dropdown
     id: operating-systems
     attributes:
       label: Which operating systems have you used?
-      description: You may select more than one.
       options:
-        - label: macOS
-        - label: Windows
-        - label: Linux
+        - macOS
+        - Windows
+        - Linux
   - type: textarea
     id: steps
     attributes:
@@ -77,5 +76,5 @@ body:
           required: true
   - type: markdown
     attributes:
-      value: "Thanks for completing our form!"
+      value: "__Thanks for completing our form!__"
 
