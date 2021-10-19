@@ -1,0 +1,81 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - znck
+body:
+  - type: dropdown
+    id: packages
+    attributes:
+      label: What packages are you seeing the problem in?
+      multiple: true
+      options:
+        - @grammarly/editor-sdk
+        - @grammarly/editor-sdk-react
+        - @grammarly/editor-sdk-vue
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What is the version of SDK?
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: checkboxes
+    id: operating-systems
+    attributes:
+      label: Which operating systems have you used?
+      description: You may select more than one.
+      options:
+        - label: macOS
+        - label: Windows
+        - label: Linux
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: Steps to reproduce
+      description: Please include a repro, https://stackoverflow.com/help/minimal-reproducible-example
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require that everyone agrees to it.
+      options:
+        - label: I agree to follow this project's [Code of Conduct](link/to/coc)
+          required: true
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"
+
