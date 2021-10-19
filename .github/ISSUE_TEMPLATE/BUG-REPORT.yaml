@@ -11,9 +11,9 @@ body:
       label: What packages are you seeing the problem in?
       multiple: true
       options:
-        - @grammarly/editor-sdk
-        - @grammarly/editor-sdk-react
-        - @grammarly/editor-sdk-vue
+        - "@grammarly/editor-sdk"
+        - "@grammarly/editor-sdk-react"
+        - "@grammarly/editor-sdk-vue"
   - type: input
     id: version
     attributes:
