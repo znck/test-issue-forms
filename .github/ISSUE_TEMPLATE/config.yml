@@ -8,3 +8,4 @@ contact_links:
     about: Please report security vulnerabilities here.
   - name: Documentation
     url: https://developer.grammarly.com/docs/
+    about: ""
