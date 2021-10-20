@@ -8,22 +8,24 @@ body:
   - type: dropdown
     id: packages
     attributes:
-      label: What packages are you seeing the problem in?
+      label: What package(s) are you seeing the problem in?
       multiple: true
       options:
         - "@grammarly/editor-sdk"
         - "@grammarly/editor-sdk-react"
         - "@grammarly/editor-sdk-vue"
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
-      label: What is the version of SDK?
+      label: SDK version
     validations:
       required: false
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Browser(s)
       multiple: true
       options:
         - Firefox
@@ -33,7 +35,7 @@ body:
   - type: dropdown
     id: operating-systems
     attributes:
-      label: Which operating systems have you used?
+      label: Operating system(s)
       options:
         - macOS
         - Windows
@@ -42,7 +44,7 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Please include a minimal repro, https://stackoverflow.com/help/minimal-reproducible-example
+      description: Please include a minimal reproduction example
       value: |
         Minimal Repro: <!-- PUT REPRO URL HERE -->
         
